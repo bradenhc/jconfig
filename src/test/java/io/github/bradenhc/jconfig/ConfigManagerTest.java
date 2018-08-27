@@ -7,9 +7,11 @@ import org.junit.jupiter.api.Test;
 
 class ConfigManagerTest {
 
+	private String configFile = "test.cfg";
+	
 	@Test
 	void test() {
-		String configFile = "test.cfg";
+		
 		Configuration config = ConfigManager.instance().get(configFile);
 		
 		assertNotNull(config);
@@ -18,6 +20,16 @@ class ConfigManagerTest {
 		ConfigManager.instance().save(configFile);
 		
 		assertTrue(true);
+	}
+	
+	@Test
+	void testGet() {
+		Configuration config = ConfigManager.instance().get(configFile);
+		
+		String s = config.getString("test.property");
+		
+		assertEquals("Hello World", s);
+		
 	}
 
 }
