@@ -7,7 +7,7 @@
 	<version>1.0.0</version>
 
 	<name>JConfig</name>
-	<description>Configuration and property file manager for Java application</description>
+	<description>Configuration and property file manager for Java applications</description>
 	<url>https://github.com/bradenhc/jconfig</url>
 
 	<licenses>
