@@ -14,6 +14,15 @@ JConfig provides a very simple wrapper around the Apache Commons configuration a
 *Note: the above version is the latest stable version available*
 
 ### Example
+
+**app.cfg**
+
+```text
+app.name = Test App
+```
+
+**MyApp.java**
+
 ```java
 import io.github.bradenhc.jconfig.ConfigManager;
 import org.apache.commons.configuration2.Configuration;
