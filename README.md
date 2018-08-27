@@ -16,6 +16,7 @@ JConfig provides a very simple wrapper around the Apache Commons configuration a
 ### Example
 ```java
 import io.github.bradenhc.jconfig.ConfigManager;
+import org.apache.commons.configuration2.Configuration;
 
 class MyApp {
 	
